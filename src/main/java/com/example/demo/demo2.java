@@ -17,7 +17,7 @@ class demo2
 //        System.out.println(vehicle.getMaxRetailPrice());
 
         AnnotationConfigApplicationContext context=new AnnotationConfigApplicationContext(Config.class);
-        Vehicle vehicle=context.getBean("car",Vehicle.class);
+        Vehicle vehicle=context.getBean("carr",Vehicle.class);
         System.out.println(vehicle.mileage());
 
 
