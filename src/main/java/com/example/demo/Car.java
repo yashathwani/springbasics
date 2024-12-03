@@ -7,11 +7,11 @@ import org.springframework.stereotype.Component;
 @Component
 public class Car implements Vehicle {
 
-    @Autowired
+//    @Autowired
     DiscountService discountService;
     private String brandName;
 
-    @Value("${car.mrp}")
+//    @Value("${car.mrp}")
     private Double MaxRetailPrice;
 
     Car() {
