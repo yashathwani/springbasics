@@ -11,17 +11,16 @@ public class Car implements Vehicle {
     DiscountService discountService;
     private String brandName;
 
-//    @Value("${car.mrp}")
+    @Value("${car.mrp}")
     private Double MaxRetailPrice;
 
     Car() {
 
     }
 //
-//    @Autowired
-//    Car(DiscountService discountService){
-//        this.discountService = discountService;
-//    }
+    Car(DiscountService discountService){
+        this.discountService = discountService;
+    }
 
 //    @Autowired
 //    public void setDiscountService(DiscountService discountService) {
